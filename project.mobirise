@@ -1,0 +1,152 @@
+{
+  "settings": {
+    "name": "Aurora+",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": [
+        "#041417"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.13",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/aurora_1.png",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nsitemap: https://aurora-login.github.io/sitemap.xml",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://aurora-login.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "mbrsiteDomain": "weflcex7jg",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.13"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Aurora Plus™ | Your gateway to the Aurora ecosystem",
+        "meta_descr": "Aurora+ is a membership program for users of Aurora, that provides a suite of valuable benefits such as free transactions and the ability to earn multiple rewards by staking your AURORA tokens.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <img src=\"@PROJECT_PATH@/assets/images/aurora.png\" alt=\"Aurora plus\">\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_anchor": "image04-0",
+          "_isUserblock": true,
+          "_cid": "vfOWyELY8p",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#ffffff",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#ffffff"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#041417\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#041417\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>Aurora Plus: Bridging Web2 Simplicity with Web3 Innovation</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Introduction</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                  The rapid growth of blockchain technology and cryptocurrencies has transformed the way people interact with digital assets, decentralized applications (dApps), and financial systems. However, despite its revolutionary potential, the crypto ecosystem still faces major challenges—complex user interfaces, high transaction fees, and steep learning curves for beginners. Aurora Plus emerges as a solution to these problems, offering a user-friendly gateway into the decentralized world. Built on top of the Aurora blockchain, Aurora Plus aims to simplify blockchain adoption while enhancing usability and accessibility.\n                </p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Understanding Aurora and Its Ecosystem</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">To fully grasp Aurora Plus, it is essential to first understand the Aurora blockchain itself. Aurora is an Ethereum-compatible layer-2 solution built on the NEAR Protocol. It allows developers to deploy Ethereum-based applications seamlessly while benefiting from lower fees and higher scalability.<br><br>Aurora essentially acts as a bridge between Ethereum and NEAR, enabling interoperability between the two ecosystems. Developers can run Solidity smart contracts on Aurora without rewriting them, while users enjoy faster transactions and reduced costs.<br><br>This powerful infrastructure forms the backbone of Aurora Plus, which serves as a gateway for users to interact with the ecosystem more easily.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>What is Aurora Plus?</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Aurora Plus (Aurora+) is a decentralized application (dApp) and membership platform designed to enhance user experience within the Aurora ecosystem. It provides a suite of features such as staking, token swaps, rewards, and access to decentralized finance (DeFi) services.<br><br>Initially launched as a membership program, Aurora Plus offered benefits like free transactions, staking rewards, and exclusive perks. Over time, it evolved into a full-fledged dApp that integrates multiple services into a single platform.<br><br>Aurora Plus is essentially a “gateway” that connects users with various dApps and services built on Aurora, making it easier for both beginners and experienced users to navigate the ecosystem.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Key Features of Aurora Plus</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Aurora Plus stands out due to its wide range of features designed to simplify blockchain interactions. Some of its most notable functionalities include:<br><br><b>1. Free Transactions</b><br><br>One of the most significant barriers in blockchain adoption is transaction fees. Aurora Plus addresses this issue by offering users free transactions (up to a certain limit per month).<br><br>This feature is particularly valuable for new users who are unfamiliar with gas fees, making it easier for them to explore blockchain applications without financial risk.<br><br><b>2. Staking Rewards</b><br><br>Aurora Plus allows users to stake AURORA tokens and earn rewards. Staking is a popular feature in the crypto space, enabling users to generate passive income while supporting network security.<br><br>By simplifying the staking process, Aurora Plus encourages more participation in the ecosystem.<br><br><b>3. Token Swapping and DeFi Integration</b><br><br>The platform includes built-in token swapping capabilities, allowing users to exchange cryptocurrencies directly within the app. Additionally, it provides access to DeFi services such as lending, borrowing, and yield farming.<br><br>This integration reduces the need for multiple platforms, streamlining the user experience.<br><br><b>4. Ecosystem Exploration</b><br><br>Aurora Plus acts as a hub where users can discover and interact with various dApps within the Aurora ecosystem. It provides curated access to decentralized applications, making it easier to explore new projects and opportunities.<br><br><b>5. Aurora Pass Wallet</b><br><br>With the introduction of Aurora Pass, a mobile wallet, Aurora Plus transitioned into a fully decentralized application. Users now access the platform using wallets instead of traditional login methods, aligning with Web3 principles.<br><br><b>6. Rewards and Incentives</b><br><br>Aurora Plus offers multiple reward mechanisms, including staking rewards, airdrops, and ecosystem incentives. These rewards encourage user engagement and participation.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>How Aurora Plus Works</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Aurora Plus operates as a front-end interface that connects users to the Aurora blockchain. It interacts with smart contracts to enable various functionalities such as staking, swapping, and lending.<br><br>Users typically follow these steps:<br><br>Connect a crypto wallet (e.g., MetaMask or Aurora Pass).<br>Deposit or purchase AURORA tokens.<br>Use the platform’s features such as staking or swapping.<br>Earn rewards or explore dApps.<br><br>The platform leverages Aurora’s EVM compatibility, allowing seamless integration with Ethereum tools and services.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Benefits of Aurora Plus</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Aurora Plus offers several advantages that make it an attractive platform in the crypto space:<br><br>1. User-Friendly Experience<br><br>Aurora Plus simplifies complex blockchain processes, making it accessible to beginners. Features like free transactions and intuitive interfaces reduce the learning curve.<br><br>2. Low Cost and High Efficiency<br><br>By leveraging the NEAR Protocol, Aurora provides fast and low-cost transactions. This efficiency is passed on to Aurora Plus users.<br><br>3. All-in-One Platform<br><br>Aurora Plus combines multiple services—staking, DeFi, swaps, and exploration—into a single interface, eliminating the need for multiple platforms.<br><br>4. Incentivized Participation<br><br>Through rewards and incentives, users are encouraged to engage with the ecosystem, increasing overall adoption.<br><br>5. Interoperability<br><br>Aurora’s integration with Ethereum and NEAR allows seamless transfer of assets across chains, enhancing flexibility for users.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Aurora Plus and the Future of Web3</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Aurora Plus represents a significant step toward mass adoption of Web3 technologies. One of the biggest challenges in blockchain is usability, and Aurora Plus addresses this by bridging the gap between Web2 simplicity and Web3 innovation.<br><br>The platform’s focus on user experience, combined with powerful blockchain infrastructure, positions it as a key player in the evolving crypto landscape.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Challenges and Limitations</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Despite its advantages, Aurora Plus is not without challenges:<br><br>1. Competition<br><br>The crypto space is highly competitive, with many platforms offering similar features such as staking and DeFi services.<br><br>2. Adoption Barriers<br><br>While Aurora Plus simplifies blockchain usage, widespread adoption still depends on broader acceptance of cryptocurrencies.<br><br>3. Security Risks<br><br>As with any blockchain platform, security remains a concern. Smart contract vulnerabilities and hacks can pose risks to users.<br><br>4. Dependence on Aurora Ecosystem<br><br>Aurora Plus is closely tied to the success of the Aurora blockchain. Any issues within the ecosystem could impact the platform.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Real-World Use Cases</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Aurora Plus can be used in various ways, including:<br><br>Passive income generation through staking<br>Trading and swapping tokens within the ecosystem<br>Exploring DeFi opportunities such as lending and borrowing<br>Participating in blockchain governance via AURORA tokens<br><br>These use cases highlight the platform’s versatility and practical value.<br><br>Community Insights and Adoption<br><br>Discussions in crypto communities highlight Aurora Plus as a beginner-friendly platform. Many users appreciate its free transactions and reward systems, which lower the entry barrier into DeFi.<br><br>For example, one Reddit discussion describes Aurora Plus as offering “up to 50 free transactions per month” along with staking and rewards, emphasizing its accessibility for new users.<br><br>Such feedback indicates that Aurora Plus is successfully addressing some of the key challenges in blockchain adoption.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Conclusion</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Aurora Plus is a powerful and user-centric platform that enhances the usability of blockchain technology. By combining features such as free transactions, staking, DeFi integration, and ecosystem exploration, it provides a comprehensive gateway to the Aurora ecosystem.<br><br>Its evolution from a membership program to a full-fledged decentralized application reflects the growing demand for user-friendly blockchain solutions. While challenges remain, Aurora Plus has the potential to play a significant role in driving the adoption of Web3 technologies.<br><br>In a world where blockchain complexity often deters new users, Aurora Plus stands out as a solution that prioritizes accessibility, efficiency, and innovation. As the crypto space continues to evolve, platforms like Aurora Plus will be crucial in shaping the future of decentralized finance and digital ecosystems.</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_anchor": "article07-1",
+          "_isUserblock": true,
+          "_cid": "vfOWyTTLa0",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
